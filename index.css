@@ -33,6 +33,12 @@ html, body {
   font-weight: 100;
   text-decoration: none;
 }
+.topstuffcontentdesc {
+  color: #c9c9c9;
+  font-size: 2.5vh;
+  font-weight: 100;
+  margin-top: 3vh;
+}
 .contentdesc {
   color: #777;
   font-size: 2.5vh;
