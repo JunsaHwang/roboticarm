@@ -49,8 +49,7 @@ html, body {
 /*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*/
 /*TOPSTUFF*/
 .topstuff {
-  background-image: url('https://media.giphy.com/media/13CfqebsPMctjO/giphy.gif'); 
-  /* background-image: url('imgs/robocopimg.jpeg'); */
+  background-image: url('imgs/robocopimg.jpeg');
   background-size: cover;
   font-size: 4vh;
   font-weight: 100;
