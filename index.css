@@ -139,9 +139,20 @@ html, body {
 /*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*/
 .special {
   margin-top: 20vh;
+  margin-bottom: 10vh;
   text-align: center;
 }
-
+.linktree {
+  text-decoration: none;
+  color: #555;
+  padding: 2vh;
+  background-color: #eee;
+  border-radius: 2vh;
+  transition: background-color 0.3s;
+}
+.linktree:hover {
+  background-color: #d5d5d5;
+}
 
 
 
