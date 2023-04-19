@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotic Arm | Junsa Hwang</title>
+  <link rel="shortcut icon" type="image/png" href="imgs/logo(clear).png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RfELl-8CZ73qQoCOoRRS3rGzGEPEelU&libraries=places"></script>
+</head>
+<body>
+<!--GRID--><!--GRID--><!--GRID--><!--GRID--><!--GRID-->
+<div class="container">
+  <a style="text-decoration: none;" href="https://www.youtube.com/watch?v=6DbGjyQqbzY" target="_blank">
+    <div class="topstuff">
+      <div class="topstufftitle">
+        Robotic Arm | Junsa Hwang 
+      </div>
+    </div>
+  </a>
+
+  <div class="content">
+    <div class="milestonesgrid" id="milestonesgrid">
+      <div class="sectiontitle">
+        Milestones ✅
+      </div>
+      <div class="contentdesc">
+        View milestones or checkpoints throughout the project
+      </div>
+    </div>
+      <script>
+        const arrow = document.querySelector("#milestonesgrid");
+        arrow.addEventListener("click", function() {
+          const section = document.querySelector("#milestones");
+          section.scrollIntoView({ behavior: "smooth" });
+        });
+      </script>
+
+    <div class="codegrid" id="codegrid">
+      <div class="sectiontitle">
+        Code 💻 🦾
+      </div>
+      <div class="contentdesc">
+        View code 
+      </div>
+    </div>
+    <script>
+      const lmao = document.querySelector("#codegrid");
+      lmao.addEventListener("click", function() {
+        const section = document.querySelector("#code");
+        section.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+
+  </div>
+</div>
+<!--GRID--><!--GRID--><!--GRID--><!--GRID--><!--GRID-->
+<!-- <hr class="pgbreak"> -->
+<!--MILESTONES--><!--MILESTONES--><!--MILESTONES-->
+<div id="milestones">
+  <div class="milestone">
+    <div class="milestonedesc">
+      <div class="milestonetitle">
+        Milestone 1
+      </div>
+      <div class="desc">
+        For my first milestone, I aimed to control 5 servo motors using a potentiometer. To achieve this, I started by learning the basics of circuitry and how the servos would be controlled by the potentiometer. I wired 5V to the positive side of the servo, grounded the bottom wire, and attached PIN 3 to the middle. I then wired the potentiometers to the breadboard and connected them to the analog slots on the Arduino. Next, I worked on the coding aspect. I defined the variables and matched each potentiometer to a servo (e.g. ap12 = A1). Finally, I created a loop in the code that took in the input from the potentiometer and scaled it to determine the angle at which the servo moves.
+      </div>
+    </div>
+    <div>
+      <iframe class="milestonevid" src="https://www.youtube.com/embed/epvfEQhCF40?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div class="milestone">
+    <div class="milestonedesc">
+      <div class="milestonetitle">
+        Milestone 2
+      </div>
+      <div class="desc">
+        My second milestone involved attaching all 5 servo motors and potentiometers to the robot arm itself so that I could control the arm's movements using the potentiometers. Fortunately, the wiring and code for this part were already set up, so this was a relatively quick milestone to achieve. The building process went smoothly, although the instructions for the kit were a bit confusing. The only hiccup was that I initially overlooked the plastic protective stickers on the robot arm parts, which added some time to the build process when I had to remove them. One challenge I encountered was that the weight of the plastic arm parts made it harder for the servos to turn. To address this issue, I added a more powerful ANKER battery pack instead of the AA batteries I had used previously. I soldered the red and black wires from the USB connector of the battery pack to the positive and negative rails on my breadboard.
+      </div>
+    </div>
+    <div>
+      <iframe class="milestonevid" src="https://www.youtube.com/embed/EXaciawE71s?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="milestone">
+    <div class="milestonedesc">
+      <div class="milestonetitle">
+        Milestone 3
+      </div>
+      <div class="desc">
+        For my final milestone, I faced a few setbacks such as power issues and having to finish in only three weeks, which resulted in me having to get a new robot arm. Despite these challenges, I was able to successfully integrate an accelerometer and flex sensor into the arm with functioning code and wiring. One of the challenges I faced was finding enough pins on the ESP 32 that consistently worked. However, I was able to save time during the build process by remembering to remove all the protective plastic from the parts. I also learned the importance of keeping a clean workspace and wires to avoid wiring mistakes and power issues. One of the successes of this milestone was discovering the optimal voltage for the servos and sensors, which I found to be about 6 volts. Additionally, I used a flex sensor to control the claw servo, which is essentially a bendable plastic sensor that functions as a variable resistor. In addition to the flex sensor, I incorporated an accelerometer into the design, which detects gravity and the direction/rotation of the sensor. I coded the Z-axis to make the base swivel when I rotated the accelerometer side to side during the demo video. To simplify the process, I worked on two separate codes and ensured everything functioned well before combining them onto a separate page. Finally, I fine-tuned the formatting and variables to match. Junsa Hwang a little shorter please Sure, here are the shorter versions: For my second milestone, I attached the 5 servos to the robot arm and made them turn with the potentiometers. It was a quick milestone, but the plastic protective stickers on the parts slowed me down. I had to add an ANKER battery pack and rewired the wires to make the project cleaner and more organized. My final milestone had multiple setbacks, but I managed to successfully incorporate the accelerometer and flex sensor into the robot arm. One challenge was finding sufficient pins on the ESP 32, but I learned to keep a clean workspace and clean wires. I also found the optimal voltage for the servos and sensors. I used a flex sensor and an accelerometer to control the claw and base swivel, respectively. After combining the libraries and code, I finetuned everything to match.
+      </div>
+    </div>
+    <div>
+      <iframe class="milestonevid" src="https://www.youtube.com/embed/mpdMt894kbc?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<!--MILESTONES--><!--MILESTONES--><!--MILESTONES-->
+<!--CODE--><!--CODE--><!--CODE--><!--CODE--><!--CODE-->
+<div id="code" class="code">
+  <a href="https://github.com/JunsaHwang/Robotic_Arm_JunsaH" target="_blank"><div class="milestonetitle">Code</div></a>
+    <pre class="codecode">
+      #include <Adafruit_MPU6050.h>
+        #include <Adafruit_Sensor.h>
+        #include <Wire.h>
+        #include <ESP32Servo.h>
+        
+        Adafruit_MPU6050 mpu;
+        
+        
+        Servo myservo; 
+        Servo myservo2;
+        Servo myservo3;
+        Servo myservo4;
+        
+        int pos = 90;
+        int pos2 = 90;
+        int pos3 = 90;
+        int pos4 = 90;
+        
+        int servoPin = 32;
+        int servoPin2 = 33;
+        int servoPin3 = 27;
+        int servoPin4 = 25;
+        
+        float ax;
+        float ay;
+        float az;
+
+        int axservo;
+        int ayservo;
+        int azservo;
+        
+        float gz;
+        
+        void setup(void) {
+          Serial.begin(115200);
+        
+          // Try to initialize!
+          if (!mpu.begin()) {
+            Serial.println("Failed to find MPU6050 chip");
+            while (1) {
+            delay(10);
+            }
+          }
+          Serial.println("MPU6050 Found!");
+        
+          // set accelerometer range to +-8G
+          mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
+        
+          // set gyro range to +- 500 deg/s
+          mpu.setGyroRange(MPU6050_RANGE_500_DEG);
+        
+          // set filter bandwidth to 21 Hz
+          mpu.setFilterBandwidth(MPU6050_BAND_21_HZ);
+        
+          ESP32PWM::allocateTimer(0);
+          ESP32PWM::allocateTimer(1);
+          ESP32PWM::allocateTimer(2);
+          ESP32PWM::allocateTimer(3);
+          myservo.setPeriodHertz(50);    // standard 50 hz servo
+          myservo.attach(servoPin, 400, 2400);
+          myservo.write(45);
+        
+          myservo2.setPeriodHertz(50);    // standard 50 hz servo
+          myservo2.attach(servoPin2, 400, 2400);
+          myservo2.write(90);
+        
+          myservo3.setPeriodHertz(50);    // standard 50 hz servo
+          myservo3.attach(servoPin3, 400, 2400);
+          myservo3.write(90);
+        
+          myservo4.setPeriodHertz(50);    // standard 50 hz servo
+          myservo4.attach(servoPin4, 400, 2400);
+          myservo4.write(90);
+        
+          delay(100);
+        }
+        
+        void loop() {
+          int flexpos;
+          flexpos = analogRead(26);
+          Serial.print("flexpos  ");
+          Serial.println(flexpos);
+          flexpos = map(flexpos, 45, 4095, 0, 180);
+          
+          /* Get new sensor events with the readings */
+          sensors_event_t a, g, temp;
+          mpu.getEvent(&a, &g, &temp);
+          ax = a.acceleration.x;
+          ay = a.acceleration.y;
+          az = a.acceleration.z;
+        
+          gz = g.gyro.z;
+        
+          /* Print out the values */
+          Serial.print("Acceleration X: ");
+          Serial.print(a.acceleration.x);
+          Serial.print(", Y: ");
+          Serial.print(a.acceleration.y);
+          Serial.print(", Z: ");
+          Serial.print(a.acceleration.z);
+          Serial.println(" m/s^2");
+        
+          Serial.print("Rotation X: ");
+          Serial.print(g.gyro.x);
+          Serial.print(", Y: ");
+          Serial.print(g.gyro.y);
+          Serial.print(", Z: ");
+          Serial.print(g.gyro.z);
+          Serial.println(" rad/s");
+        
+          Serial.print("Temperature: ");
+          Serial.print(temp.temperature);
+          Serial.println(" degC");
+        
+          Serial.println("");
+          delay(100);
+          
+          ax = mapfloat(ax, -10, 10, 0, 180);
+          Serial.print(" ax ");
+          Serial.println(ax);
+          ay = mapfloat(ay, -10, 10, 0, 180);
+          Serial.print(" ay ");
+          Serial.println(ay);
+          az = mapfloat(az, -10, 10, 0, 180);
+          Serial.print(" az ");
+          Serial.println(az);
+        
+          axservo = ax;
+          ayservo = ay;
+          azservo = az;
+        
+        
+        
+          while(gz>0.2){
+            sensors_event_t a, g, temp;
+            mpu.getEvent(&a, &g, &temp);
+            ax = a.acceleration.x;
+            ay = a.acceleration.y;
+            az = a.acceleration.z;
+        
+            gz = g.gyro.z;
+            Serial.println("Servo moving left");
+            pos2+=5;
+            if (pos2>180){
+              pos2 = 180;
+            
+            }
+            
+            myservo2.write(pos2);
+            delay(10);
+            
+            
+          }
+            while(gz<-0.2){
+            sensors_event_t a, g, temp;
+            mpu.getEvent(&a, &g, &temp);
+            ax = a.acceleration.x;
+            ay = a.acceleration.y;
+            az = a.acceleration.z;
+        
+            gz = g.gyro.z;
+          
+            
+            Serial.println("Servo moving right");
+            pos2-=5;
+            if (pos2<0){
+              pos2 = 0;
+            
+            }
+            myservo2.write(pos2);
+            delay(10);
+            
+            
+          }
+          myservo.write(axservo);
+          myservo4.write(ayservo);
+          myservo3.write(flexpos);
+        }
+        
+        
+        float mapfloat(float x, float in_min, float in_max, float out_min, float out_max) {
+          return (float)(x - in_min) * (out_max - out_min) / (float)(in_max - in_min) + out_min;
+        }
+    </pre>
+</div>
+
+<div class="special">
+  <a href="lmao.html">DO NOT CLICK HERE</a>
+</div>
+<!--CODE--><!--CODE--><!--CODE--><!--CODE--><!--CODE-->
+</body>
+</html>
