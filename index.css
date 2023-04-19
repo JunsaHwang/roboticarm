@@ -100,6 +100,7 @@ html, body {
 .milestonetitle {
   font-size: 3vh;
   font-weight: 100;
+  color: #333;
 }
 .milestonedesc {
   display: flex;
@@ -138,10 +139,164 @@ html, body {
   padding: 3vh;
 }
 /*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*/
-
-
-
 .special {
   margin-top: 20vh;
   text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 500px) {
+  html, body {
+    margin: 1vh;
+  }
+  /*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*/
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2vh;
+    text-decoration: none;
+  }
+  .topstuff {
+    grid-row: 1 / 2;
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr; /* modified */
+    grid-template-rows: 1fr;
+    grid-row: 2 / 3;
+    grid-gap: 2vh;
+  }
+  .milestonesgrid {
+    grid-column: 1 / span 1;
+  }
+  .codegrid {
+    grid-column: 1 / span 1;
+  }
+  .sectiontitle {
+    color: #333;
+    font-size: 3vh;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  .contentdesc {
+    color: #777;
+    font-size: 2vh;
+    font-weight: 100;
+    margin-top: 3vh;
+  }
+  .topstuff, .milestonesgrid, .codegrid {
+    transition: transform 0.3s ease-in-out;
+  }
+  .topstuff:hover, .milestonesgrid:hover, .codegrid:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+  }
+  /*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*//*GRIDSYSTEM*/
+  /*TOPSTUFF*/
+  .topstuff {
+    background-image: url('imgs/robocopimg.jpeg');
+    font-size: 4vh;
+    border-radius: 2vh;
+    height: 30vh;
+  }
+  .topstufftitle {
+    color: #fff;
+    font-size: 3vh;
+    font-weight: 100;
+    text-decoration: none;
+  }
+  /*TOPSTUFF*/
+  /*MILESTONESGRID*/
+  .milestonesgrid {
+    background-color: #eee;
+    font-size: 4vh;
+    font-weight: 100;
+    border-radius: 2vh;
+    padding: 3vh;
+    cursor: pointer;
+  }
+  /*MILESTONESGRID*/
+  /*CODEGRID*/
+  .codegrid {
+    font-size: 4vh;
+    padding: 3vh;
+    border-radius: 2vh;
+    height: 10vh;
+  }
+  /*CODEGRID*/
+  /*MILESTONES*//*MILESTONES*//*MILESTONES*//*MILESTONES*/
+  #milestones {
+    padding-top: 1vh;
+  }
+  .milestonetitle {
+    font-size: 2.5vh;
+    font-weight: 100;
+  }
+  .milestonedesc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .desc {
+    margin-top: 2vh;
+    font-size: 2vh;
+  }
+  .milestone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5vh;
+    border: 0.3vh solid #eee;
+    border-radius: 2vh;
+    padding: 2vh;
+  }
+  .milestonevid {
+    height: auto;
+    width: 100%;
+    border-radius: 2vh;
+    margin-top: 2vh;
+    background-image: url('https://www.youtube.com/watch?v=epvfEQhCF40');
+  }
+  /*MILESTONES*//*MILESTONES*//*MILESTONES*//*MILESTONES*/
+  /*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*/
+  #code {
+    padding-top: 2vh;
+    margin-top: 5vh;
+  }
+  .codecode {
+    display: none;
+  }
+  /*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*//*CODE*/
+  .special {
+    margin-top: 10vh;
+  }
+  
 }
